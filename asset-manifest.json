@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/it_start/static/css/main.1592eb65.css",
+    "main.js": "/it_start/static/js/main.617b5e70.js",
+    "static/js/787.24cafc05.chunk.js": "/it_start/static/js/787.24cafc05.chunk.js",
+    "static/media/personLeft.svg": "/it_start/static/media/personLeft.385861bda9de1dbf676b6ac12db4f26d.svg",
+    "static/media/withTablychka11.svg": "/it_start/static/media/withTablychka11.bfdcbe042af799b585c1a3ec5cef23e4.svg",
+    "static/media/compleatedWorm.svg": "/it_start/static/media/compleatedWorm.e5e93d74b64a81485561def54047ee92.svg",
+    "static/media/TGHaidoGrotesk-BlackItalic.ttf": "/it_start/static/media/TGHaidoGrotesk-BlackItalic.ce491bf954aa3a018422.ttf",
+    "static/media/TGHaidoGrotesk-ExtraboldItalic.ttf": "/it_start/static/media/TGHaidoGrotesk-ExtraboldItalic.5b576df9d3444c950ddf.ttf",
+    "static/media/TGHaidoGrotesk-Black.ttf": "/it_start/static/media/TGHaidoGrotesk-Black.74cb5c7a303e9c7cb2ed.ttf",
+    "static/media/TGHaidoGrotesk-Extrabold.ttf": "/it_start/static/media/TGHaidoGrotesk-Extrabold.c6ac888cacd0388453bb.ttf",
+    "static/media/TGHaidoGrotesk-BoldItalic.ttf": "/it_start/static/media/TGHaidoGrotesk-BoldItalic.66ccff17189a07a88df5.ttf",
+    "static/media/TGHaidoGrotesk-SemiboldItalic.ttf": "/it_start/static/media/TGHaidoGrotesk-SemiboldItalic.8fd0325a4a46e03634fc.ttf",
+    "static/media/TGHaidoGrotesk-MediumItalic.ttf": "/it_start/static/media/TGHaidoGrotesk-MediumItalic.869ab4c9db51a33b9bb9.ttf",
+    "static/media/TGHaidoGrotesk-Semibold.ttf": "/it_start/static/media/TGHaidoGrotesk-Semibold.3fd72a0a1cdd77acd1d9.ttf",
+    "static/media/TGHaidoGrotesk-Italic.ttf": "/it_start/static/media/TGHaidoGrotesk-Italic.283b80a9fc8e19572107.ttf",
+    "static/media/TGHaidoGrotesk-Bold.ttf": "/it_start/static/media/TGHaidoGrotesk-Bold.32be3ffa92e5b82ed7ca.ttf",
+    "static/media/TGHaidoGrotesk-LightItalic.ttf": "/it_start/static/media/TGHaidoGrotesk-LightItalic.4cd97c3cc39c2e2b6b0f.ttf",
+    "static/media/TGHaidoGrotesk-ExtralightItalic.ttf": "/it_start/static/media/TGHaidoGrotesk-ExtralightItalic.56113b45d6a0553522bd.ttf",
+    "static/media/TGHaidoGrotesk-Medium.ttf": "/it_start/static/media/TGHaidoGrotesk-Medium.3b47de95eaf4e831bc4c.ttf",
+    "static/media/TGHaidoGrotesk-ThinItalic.ttf": "/it_start/static/media/TGHaidoGrotesk-ThinItalic.1e8a372414108699af61.ttf",
+    "static/media/TGHaidoGrotesk-Regular.ttf": "/it_start/static/media/TGHaidoGrotesk-Regular.8d3310b19e5ad9b7ad1a.ttf",
+    "static/media/TGHaidoGrotesk-Extralight.ttf": "/it_start/static/media/TGHaidoGrotesk-Extralight.23d6c22aadf8af22d1e3.ttf",
+    "static/media/TGHaidoGrotesk-Light.ttf": "/it_start/static/media/TGHaidoGrotesk-Light.3608072377b6ac97e9bf.ttf",
+    "static/media/TGHaidoGrotesk-Thin.ttf": "/it_start/static/media/TGHaidoGrotesk-Thin.02ded881a1c11f715092.ttf",
+    "static/media/PressStart2P-Regular.ttf": "/it_start/static/media/PressStart2P-Regular.5f45b52192a301cb8ccd.ttf",
+    "static/media/textRight.svg": "/it_start/static/media/textRight.eba50ceec538227794ac93a35247cb0e.svg",
+    "static/media/logo.svg": "/it_start/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/it_start/index.html",
+    "main.1592eb65.css.map": "/it_start/static/css/main.1592eb65.css.map",
+    "main.617b5e70.js.map": "/it_start/static/js/main.617b5e70.js.map",
+    "787.24cafc05.chunk.js.map": "/it_start/static/js/787.24cafc05.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1592eb65.css",
+    "static/js/main.617b5e70.js"
+  ]
+}
