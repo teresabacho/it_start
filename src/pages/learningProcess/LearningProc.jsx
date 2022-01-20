@@ -189,7 +189,7 @@ class LearningProc extends React.Component {
                             <div className=" steps step1">
                                 <p>Крок 1</p>
                                 <h4>Дивитесь відео</h4>
-                                <button onClick={() => this.setAnimation('passive')}>
+                                <button onClick={() => this.setAnimation('passive')} className="watchVideoBtn">
                                     <svg width="128" height="128" viewBox="0 0 128 128" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -202,7 +202,7 @@ class LearningProc extends React.Component {
                                 <p>Крок 2</p>
                                 <h4>Кодите</h4>
                                 <span>P.S. швидкість та розмах залежать від вас, тому пропонуємо вибрати параметри самостійно</span>
-                                <button onClick={() => this.setAnimation('stressed', 240)}>
+                                <button onClick={() => this.setAnimation('stressed', 240)} className="codeBtn">
                                     <svg width="128" height="128" viewBox="0 0 128 128" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -214,7 +214,7 @@ class LearningProc extends React.Component {
                             <div className=" steps step3">
                                 <p>Крок 3</p>
                                 <h4>Вносите останні зміни</h4>
-                                <button onClick={() => this.setAnimation('typing')}>
+                                <button onClick={() => this.setAnimation('typing')} className="changeBtn">
                                     <svg width="128" height="128" viewBox="0 0 128 128" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -226,14 +226,13 @@ class LearningProc extends React.Component {
                             <div className=" steps step4">
                                 <p>Крок 4</p>
                                 <h4>Відправляєте ментору на перевірку</h4>
-                                <button onClick={() => this.setAnimation('waiting')}>
+                                <button onClick={() => this.setAnimation('waiting')} className="checkBtn">
                                     <svg width="107" height="107" viewBox="0 0 107 107" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                               d="M0 53.5C0 39.3109 5.63659 25.703 15.6698 15.6698C25.703 5.6366 39.3109 7.92568e-06 53.5 7.92568e-06C67.6891 7.92568e-06 81.297 5.6366 91.3302 15.6698C101.363 25.703 107 39.3109 107 53.5C107 67.6891 101.363 81.297 91.3302 91.3302C81.297 101.363 67.6891 107 53.5 107C39.3109 107 25.703 101.363 15.6698 91.3302C5.63659 81.297 0 67.6891 0 53.5ZM50.4469 76.3982C50.4469 76.3981 50.447 76.398 50.447 76.3979L78.0898 41.8413C79.8464 39.6453 79.5296 36.4487 77.376 34.6402V34.6402C75.1196 32.7453 71.739 33.1122 69.9416 35.4471L51.0602 59.9752C50.722 60.4145 50.0911 60.4949 49.6536 60.1544L38.0081 51.0909C35.6197 49.2321 32.1986 49.5459 30.1882 51.8082V51.8082C28.0341 54.2323 28.3131 57.9581 30.8043 60.0343L50.4416 76.4007C50.4437 76.4025 50.4469 76.4009 50.4469 76.3982V76.3982Z"
                                               fill="#B3FBD8"/>
                                     </svg>
-
                                 </button>
                             </div>
                             {/*<button onClick={() => this.setAnimation('thinking')}>Вносите останні зміни</button>*/}

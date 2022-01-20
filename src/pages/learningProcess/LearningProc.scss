@@ -13,7 +13,7 @@
   .mainBlockCont {
     width: $lW;
     margin: 0 auto;
-    background-color: #c792f3;
+    //background-color: #c792f3;
   }
 
 
@@ -52,6 +52,7 @@
 
   // App wrapper
   .app {
+    position: relative;
     display: flex;
     //height: 100vh;
     max-width: 100%;
@@ -84,7 +85,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    background-color: #cfa7fa;
+    //background-color: #cfa7fa;
     //bottom: 5%;
     left: 0;
     right: 0;
@@ -99,7 +100,7 @@
     .steps{
       min-width: 245px;
       min-height: 100px;
-      background-color: #97f1b7;
+      //background-color: #e6d1ff;
       position: absolute;
       text-align: start;
     }
@@ -110,6 +111,8 @@
       color: $darkColor;
       @include text(18px, $primaryFont, 400);
       line-height: 100%;
+      z-index: 20;
+      position: absolute;
     }
 
     h4{
@@ -117,6 +120,10 @@
       padding: 0;
       color: $darkColor;
       @include text(24px, $primaryFont, 700);
+      line-height: 100%;
+      z-index: 20;
+      position: absolute;
+      top: 24px;
     }
 
     span{
@@ -128,27 +135,64 @@
       color: $darkColor;
       @include text(16px, $primaryFont, 400);
       line-height: 135%;
+      position: absolute;
+      top: 60px;
+      z-index: 20;
     }
 
+    // steps position
     .step1{
+      width: 280px;
       left: 0;
-      top: -180px;
+      top: -230px;
     }
 
     .step2{
-      left: 300px;
+      width: 350px;
+      height: 150px;
+      left: 220px;
       top: -40px;
     }
 
     .step3{
-      left: 600px;
-      top: -180px;
+      width: 320px;
+      left: 760px;
+      top: 90px;
     }
 
     .step4{
       right: 0;
-      top: -180px;
+      top: -100px;
       width: 285px;
+    }
+
+
+    // buttons
+    .watchVideoBtn{
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+    }
+
+    .codeBtn{
+      position: absolute;
+      z-index: 1;
+      top: -20px;
+      right: 0;
+    }
+
+    .changeBtn{
+      position: absolute;
+      z-index: 1;
+      top: -86px;
+      left: -73px;
+    }
+
+    .checkBtn{
+      position: absolute;
+      top: -82px;
+      left: -35px;
     }
   }
 
@@ -160,22 +204,24 @@
 
   // Sliders (visible when stressed)
   .sliders {
-    position: fixed;
-    right: 0;
-    top: 20%;
-    width: 100%;
+    position: absolute;
+    top: 500px;
+    left: 230px;
+    width: 300px;
     display: flex;
     justify-content: center;
+    //background-color: #cb5151;
   }
 
-  @media (min-width: 650px) {
-    .sliders {
-      top: 34%;
-    }
-  }
+  //@media (min-width: 650px) {
+  //  .sliders {
+  //    top: 34%;
+  //  }
+  //}
 
   input[type=range] {
-    background: #ebf6ff;
+    //background: $primaryColor;
+    background: rgba(179, 251, 216, 0.4);
     border-radius: 20px;
     margin: 10px;
     -webkit-appearance: none;
@@ -189,9 +235,12 @@
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background: #a0d9cb;
+    background: $primarySdColor;
     cursor: pointer;
     -webkit-appearance: none;
+    //position: absolute;
+    //top: -30px;
+    //left: 100px;
   }
 
 
@@ -200,12 +249,13 @@
     position: relative;
 
     &__eye {
+      fill: $darkColor;
       transition: transform 0.3s ease;
       transform: translate(10px, 0px);
     }
 
     &__body {
-      fill: #a0d8cb;
+      fill: $primaryColor;
       transition: transform 0.3s ease;
     }
 
@@ -396,7 +446,7 @@
 
     & path {
       fill: none;
-      stroke: #eaf6ff;
+      stroke: $primarySdColor;
       stroke-width: 12;
       stroke-linecap: round;
       stroke-miterlimit: 10;
