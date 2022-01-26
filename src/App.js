@@ -8,6 +8,9 @@ import {Home} from "./pages/home/Home";
 import {Goal} from "./pages/goal/Goal";
 import {Mentors} from "./pages/mentors/Mentors";
 import LearningProc from "./pages/learningProcess/LearningProc";
+import {ChooseCourse} from "./pages/chooseCourse/ChooseCourse";
+import {Contacts} from "./pages/contacts/Contacts";
+import {Footer} from "./components/footer/Footer";
 
 
 function App() {
@@ -32,8 +35,14 @@ function App() {
                     <Rectangles/>
                 </div>
 
+                <ChooseCourse/>
+
+                <Rectangles/>
+                <Contacts/>
+
             </main>
-            {/*<Footer/>*/}
+
+            <Footer/>
         </div>
     );
 }

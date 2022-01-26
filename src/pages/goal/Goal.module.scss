@@ -125,18 +125,19 @@
 
     img {
       position: absolute;
-      transform: scale(1.25);
+      //transform: scale(1.25);
     }
 
     .person {
       z-index: 0;
+      left: 80px;
     }
 
     .txt {
       z-index: 1;
       left: -14px;
       top: -26px;
-      transform: rotate(0.1deg) scale(1.25);
+      //transform: rotate(0.1deg) scale(1.25);
     }
   }
 
@@ -148,7 +149,10 @@
     left: -40px;
 
     .personL {
-      transform: scale(1.2);
+      position: absolute;
+      top: 120px;
+      left: 200px;
+      //transform: scale(1.2);
     }
   }
 }

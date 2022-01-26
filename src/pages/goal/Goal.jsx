@@ -3,9 +3,9 @@ import style from "./Goal.module.scss";
 import BlockTitle from "../../components/blockTitle/BlockTitle";
 import CourseButton from "../../components/courseButton/CourseButton";
 
-import photo from "../../assets/images/withTablychka11.svg";
-import textR from "../../assets/images/textRight.svg";
-import personL from "../../assets/images/personLeft.svg";
+import personR from "../../assets/images/personR.svg";
+// import textR from "../../assets/images/textRight.svg";
+import personL from "../../assets/images/personL.svg";
 
 export function Goal() {
     return (
@@ -35,8 +35,8 @@ export function Goal() {
                     </div>
 
                     <div className={style.upperBoxRightImg}>
-                        <img src={photo} alt="Person right" className={style.person}/>
-                        <img src={textR} alt="textOn" className={style.txt}/>
+                        <img src={personR} alt="Person right" className={style.person}/>
+                        {/*<img src={textR} alt="textOn" className={style.txt}/>*/}
                     </div>
                 </div>
 

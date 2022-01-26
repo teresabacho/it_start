@@ -1,0 +1,55 @@
+@import "/src/styles/variables";
+@import "/src/styles/mixins";
+
+
+.footer{
+  position: relative;
+  width: 100%;
+  height: 350px;
+  background-color: transparent;
+
+
+
+
+  .footerWrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(38, 38, 38, 0.1);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: inset 0px 20px 15px -15px rgba(38, 38, 38, 0.3);
+    display: flex;
+    align-items: center;
+  }
+
+  .footerCont{
+    width: $lW;
+    margin: 0 auto;
+    //background-color: #ab4848;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+
+    div{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-right: 500px;
+
+      a{
+        display: block;
+        @include text(36px, $primaryFont, 800);
+        color: $darkColor;
+      }
+
+      a:nth-child(2){
+        text-decoration: none;
+      }
+    }
+  }
+  
+
+}
