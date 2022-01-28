@@ -1,12 +1,12 @@
 import React, {useCallback, useState} from "react";
-import style from "./ChooseCourse.module.scss";
-import BlockTitle from "../../components/blockTitle/BlockTitle";
-import CourseButton from "../../components/courseButton/CourseButton";
+import style from "./Course.module.scss";
+import BlockTitle from "../../components/title/BlockTitle";
+import CourseButton from "../../components/course_button/CourseButton";
 
 
-export function ChooseCourse() {
+export function Course() {
     return (
-        <div className={style.mainBlock}>
+        <section id={'main_courses'} className={style.mainBlock}>
             <div className={style.titleWrapper}>
                 <BlockTitle/>
             </div>
@@ -68,8 +68,8 @@ export function ChooseCourse() {
 
             </div>
 
-        </div>
+        </section>
     )
 }
 
-export default ChooseCourse;
+export default Course;

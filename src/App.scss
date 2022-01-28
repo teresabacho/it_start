@@ -3,15 +3,30 @@
 @import "../src/styles/fonts";
 
 
-.App{
+.App {
   width: 100%;
   min-height: 100vh;
   //background-color: #dbfdf4;
 }
 
-.down{
-  margin-top: -4px;
+.down {
+  margin-top: -8px;
   transform: rotate(180deg);
+}
+
+.sideMenu {
+  position: absolute;
+  //top: 0;
+  right: 175px;
+  overflow: visible;
+  width: 175px;
+  height: 3700px;
+
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.11);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  //border: 2px solid white;
 }
 
 

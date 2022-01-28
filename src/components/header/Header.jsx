@@ -1,5 +1,7 @@
 import React from "react";
-import style from './Header.module.scss'
+import style from './Header.module.scss';
+import CourseButton from "../course_button/CourseButton";
+import Contacts from "../../main_pages/main_contacts/Contacts";
 
 export function Header() {
 
@@ -54,9 +56,17 @@ export function Header() {
                                 Контакти
                             </a>
                         </li>
+
+                        {/*<li>*/}
+                        {/*    <a href="#">*/}
+                        {/*        <CourseButton/>*/}
+                        {/*    </a>*/}
+                        {/*</li>*/}
                     </ul>
                 </nav>
             </div>
         </header>
     );
 }
+
+export default Header;

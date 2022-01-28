@@ -1,0 +1,28 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+
+.mainBlock {
+  width: 100%;
+  margin-top: -8px;
+  padding-bottom: 100px;
+  background-color: #fff;
+  //height: 300px;
+
+  .mainBlockCont{
+    width: $lW;
+    margin: 0 auto;
+
+    div{
+      width: 575px;
+      margin: 0 0 0 110px;
+    }
+  }
+
+  p{
+    @include text(18px, $primaryFont, 400);
+    color: $darkColor;
+  }
+
+
+}

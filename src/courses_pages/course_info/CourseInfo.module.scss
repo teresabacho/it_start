@@ -1,0 +1,132 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+
+.mainBlock {
+  width: 100%;
+  margin-top: -8px;
+  height: 300px;
+
+  .mainBlockCont{
+    width: $lW;
+    height: 100%;
+    margin: 0 auto;
+    //background-color: rgba(200, 200, 239, 0.73);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    div{
+      width: 325px;
+      height: 110px;
+      //background-color: rgba(184, 149, 241, 0.54);
+      border-radius: 255px 15px 225px 15px/15px 235px 5px 275px;
+    }
+
+    .price{
+      position: relative;
+
+      div{
+        position: absolute;
+        width: 267px;
+        height: 75px;
+        background: rgba(255, 255, 255, 0.4);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+
+        @include text(36px, $primaryFont, 900);
+        color: $darkColor;
+        text-align: center;
+        line-height: 75px;
+      }
+
+      p{
+        display: block;
+        position: absolute;
+        left: 100px;
+        top: 72px;
+        margin: 0;
+        @include text(36px, $primaryFont, 700);
+        color: $darkColor;
+        line-height: 90%;
+      }
+
+      span{
+        @include text(36px, $primaryFont, 800, italic);
+        color: $darkColor;
+        line-height: 90%;
+      }
+    }
+
+    .start{
+      position: relative;
+
+      p{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        left: 0;
+        top: 0;
+        margin: 0;
+        @include text(36px, $primaryFont, 700);
+        color: $darkColor;
+        line-height: 90%;
+      }
+
+      div{
+        position: absolute;
+        top: 24px;
+        left: 20px;
+        z-index: 10;
+        width: 267px;
+        height: 75px;
+        background: rgba(255, 255, 255, 0.4);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+
+        @include text(36px, $primaryFont, 900);
+        color: $darkColor;
+        text-align: center;
+        line-height: 75px;
+      }
+    }
+
+    .places{
+      position: relative;
+
+      div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 267px;
+        height: 75px;
+        background: rgba(255, 255, 255, 0.4);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+
+        @include text(36px, $primaryFont, 900);
+        color: $darkColor;
+        text-align: center;
+        line-height: 75px;
+      }
+
+      p{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        left: 50px;
+        top: 70px;
+        margin: 0;
+        @include text(36px, $primaryFont, 700);
+        color: $darkColor;
+        line-height: 90%;
+      }
+    }
+
+
+
+  }
+
+}

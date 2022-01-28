@@ -1,0 +1,86 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+
+.mainBlock {
+  width: 100%;
+  margin-top: -8px;
+  padding-bottom: 150px;
+  background-color: #fff;
+  height: 1400px;
+
+
+  .mainBlockCont {
+    width: $lW;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    //background-color: #a84949;
+  }
+
+  .programBlock {
+    width: $bigBlock;
+    height: 1400px;
+    //background-color: #abe3dd;
+    position: absolute;
+
+    img {
+      position: absolute;
+    }
+  }
+
+  .stop1 {
+    z-index: 100;
+    top: 10px;
+    left: 50px;
+  }
+
+  .stop2 {
+    z-index: 90;
+    top: 50px;
+    left: 182px;
+  }
+
+  .stop3 {
+    z-index: 80;
+    top: 147px;
+    left: 413px;
+  }
+
+  .stop4 {
+    z-index: 70;
+    top: 227px;
+    left: 16px;
+  }
+
+  .stop5 {
+    z-index: 60;
+    top: 420px;
+    left: 3px;
+  }
+
+  .stop6 {
+    z-index: 50;
+    top: 510px;
+    left: 217px;
+  }
+
+  .stop7 {
+    z-index: 40;
+    top: 623px;
+    left: 624px;
+  }
+
+  .stop8 {
+    z-index: 30;
+    top: 835px;
+    left: 139px;
+  }
+
+  .finish {
+    z-index: 20;
+    top: 1089px;
+    left: 53px;
+  }
+
+}

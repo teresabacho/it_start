@@ -1,7 +1,7 @@
 import React, {useCallback, useState} from "react";
 import style from "./Goal.module.scss";
-import BlockTitle from "../../components/blockTitle/BlockTitle";
-import CourseButton from "../../components/courseButton/CourseButton";
+import BlockTitle from "../../components/title/BlockTitle";
+import CourseButton from "../../components/course_button/CourseButton";
 
 import personR from "../../assets/images/personR.svg";
 // import textR from "../../assets/images/textRight.svg";
@@ -9,7 +9,7 @@ import personL from "../../assets/images/personL.svg";
 
 export function Goal() {
     return (
-        <div className={style.mainBlock}>
+        <section id={'main_goal'} className={style.mainBlock}>
             <BlockTitle/>
 
             <div className={style.mainBlockCont}>
@@ -70,7 +70,7 @@ export function Goal() {
 
             </div>
 
-        </div>
+        </section>
     )
 }
 

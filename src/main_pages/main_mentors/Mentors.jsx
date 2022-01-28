@@ -1,12 +1,12 @@
 import React, {useCallback, useState} from "react";
 import style from "./Mentors.module.scss";
-import BlockTitle from "../../components/blockTitle/BlockTitle";
+import BlockTitle from "../../components/title/BlockTitle";
 
 
 export function Mentors() {
 
     return (
-        <div className={style.mainBlock}>
+        <section id={'main_mentors'} className={style.mainBlock}>
             <div className={style.titleWrapper}>
                 <BlockTitle/>
             </div>
@@ -36,7 +36,7 @@ export function Mentors() {
 
 
             </div>
-        </div>
+        </section>
     )
 }
 

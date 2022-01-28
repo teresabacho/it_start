@@ -1,6 +1,6 @@
 import React, {useCallback, useState} from "react";
-import "./LearningProc.scss";
-import BlockTitle from "../../components/blockTitle/BlockTitle";
+import "./Process.scss";
+import BlockTitle from "../../components/title/BlockTitle";
 
 // Character component
 const Character = ({animation}) => {
@@ -68,7 +68,7 @@ const Table = () => (
     </svg>
 );
 
-// export function LearningProc() {
+// export function Process() {
 //
 //     return (
 //         <div className={style.mainBlock}>
@@ -85,7 +85,7 @@ const Table = () => (
 // }
 
 
-class LearningProc extends React.Component {
+class Process extends React.Component {
 
     constructor(props) {
         super(props);
@@ -170,7 +170,7 @@ class LearningProc extends React.Component {
     render() {
         const {frequency, amplitude, animation} = this.state;
         return (
-            <div className="mainBlockLearningProc">
+            <section id={'main_process'} className="mainBlockLearningProc">
                 <BlockTitle/>
 
                 <div className="mainBlockCont">
@@ -262,9 +262,9 @@ class LearningProc extends React.Component {
                     </div>
 
                 </div>
-            </div>
+            </section>
         );
     }
 }
 
-export default LearningProc;
+export default Process;

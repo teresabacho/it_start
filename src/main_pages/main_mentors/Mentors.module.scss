@@ -34,6 +34,7 @@
       width: 355px;
       border-radius: 255px 15px 225px 15px/15px 235px 5px 275px;
       background: rgba(255, 255, 255, 0.5);
+      -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
       padding: 29px;
 
