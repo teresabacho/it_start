@@ -14,10 +14,16 @@
   transform: rotate(180deg);
 }
 
+.wrapper{
+  width: $lW;
+  height: 200px;
+  background-color: #d77676;
+}
+
 .sideMenu {
   position: absolute;
   //top: 0;
-  right: 175px;
+  right: 5vw;
   overflow: visible;
   width: 175px;
   height: 3700px;

@@ -30,43 +30,46 @@ function App() {
             <Background/>
 
             <main>
-                {/*<Home/>*/}
+                <Home/>
 
-                {/*<Rectangles/>*/}
-                {/*<Goal/>*/}
-                {/*<div className="down">*/}
-                {/*    <Rectangles/>*/}
-                {/*</div>*/}
+                <Rectangles/>
+                <Goal/>
+                <div className="down">
+                    <Rectangles/>
+                </div>
 
-                {/*<Mentors/>*/}
+                <Mentors/>
 
-                {/*<Rectangles/>*/}
-                {/*<Process/>*/}
-                {/*<div className="down">*/}
-                {/*    <Rectangles/>*/}
-                {/*</div>*/}
+                <Rectangles/>
+                <Process/>
+                <div className="down">
+                    <Rectangles/>
+                </div>
 
-                {/*<Course/>*/}
+                <Course/>
 
-                {/*<Rectangles/>*/}
-                {/*<Contacts/>*/}
+                <Rectangles/>
+                <Contacts/>
 
 
                 {/*CourseHome*/}
 
-                <CourseHome/>
-                <div className="down">
-                    <Rectangles/>
-                </div>
-                <CourseInfo/>
-                <Rectangles/>
-                <div className="sideMenu">
-                    <SideMenu/>
-                </div>
-                <CourseAbout/>
-                <CourseProgram/>
-                <CourseCareer/>
-                <CourseApply/>
+
+
+                {/*<CourseHome/>*/}
+                {/*<div className="down">*/}
+                {/*    <Rectangles/>*/}
+                {/*</div>*/}
+                {/*<CourseInfo/>*/}
+                {/*<Rectangles/>*/}
+                {/*<div className="sideMenu">*/}
+                {/*    <SideMenu/>*/}
+                {/*</div>*/}
+
+                {/*<CourseAbout/>*/}
+                {/*<CourseProgram/>*/}
+                {/*<CourseCareer/>*/}
+                {/*<CourseApply/>*/}
 
 
             </main>

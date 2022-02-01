@@ -6,7 +6,6 @@
   height: 90vh;
 
   //background-color: #4dc2be;
-  
   .mainBlockCont{
     width: $lW;
     height: 90vh;
@@ -62,6 +61,30 @@
       margin-left: 50px;
       overflow: hidden;
     }
+  }
+
+
+  @media screen and (max-width: 1000px){
+
+    .mainBlockCont{
+      width: $slW;
+      margin: 0 auto;
+      background-color: #8f4242;
+    }
+
+    .titleBox {
+      width: 400px;
+      height: 300px;
+
+      //padding-left: 140px;
+
+      //background-color: #9781d9;
+    }
+
+
+
+
+
   }
 
 }
