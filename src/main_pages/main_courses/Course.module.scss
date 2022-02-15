@@ -4,7 +4,6 @@
 
 .mainBlock {
   width: 100%;
-  min-height: 100vh;
   margin-top: 100px;
   margin-bottom: 100px;
   //background-color: #fff;
@@ -128,7 +127,56 @@
       .bottom{
         margin-top: 35px;
         @include text(18px, $primaryFont, 600);
-        color: #717171;
+
+        .time{
+          margin-right: 70px;
+        }
+      }
+    }
+
+  }
+
+
+  @media screen and (max-width: $mW){
+    //margin-top: 50px;
+    //margin-bottom: 50px;
+
+    //.titleWrapper{
+    //  margin-bottom: 15px;
+    //}
+
+    .mainBlockCont {
+      width: $bigBlockForMW;
+    }
+
+    a{
+      width: $smallBlockForMW;
+      height: 100px;
+      padding: 30px 35px;
+      text-decoration: none;
+      margin: 25px auto;
+
+      .top{
+        .course{
+          @include text(15px, $primaryFont, 400);
+        }
+
+        .method{
+          @include text(15px, $primaryFont, 500);
+        }
+      }
+
+      .middle{
+        margin-top: 2px;
+
+        h4{
+          @include text(22px, $primaryFont, 800);
+        }
+      }
+
+      .bottom{
+        margin-top: 25px;
+        @include text(16px, $primaryFont, 600);
 
         .time{
           margin-right: 70px;

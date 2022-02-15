@@ -110,4 +110,47 @@
 
   }
 
+  @media screen and (max-width: $mW){
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .mainBlockCont {
+      width: $bigBlockForMW;
+    }
+
+    .p {
+      width: 435px;
+      @include text(17px, $primaryFont, 400);
+      margin: 25px auto 0;
+    }
+
+    .blocksCont {
+      width: 100%;
+      margin-top: 15px;
+
+      div {
+        width: $smallBlockForMW - 40px;
+        padding: 20px;
+        margin: 10px auto;
+
+        p{
+          margin: 0;
+          @include text(15px, $primaryFont, 400);
+        }
+
+        span{
+          @include text(15px, $primaryFont, 400);
+        }
+
+        img{
+          width: 30px;
+          height: 30px;
+          top: -11px;
+          right: -7px;
+        }
+      }
+    }
+
+  }
+
 }

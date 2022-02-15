@@ -54,26 +54,21 @@
       @include text(12px, $primaryFont, 900);
     }
   }
+
+  @media screen and (max-width: $mW){
+
+    h2{
+      width: $bigBlockForMW;
+      @include text(40px, $primaryFont, 900);
+    }
+
+
+    .list{
+      top: 36px;
+      @include text(10px, $primaryFont, 900);
+    }
+  }
 }
 
 
-//.ul{
-//  position: absolute;
-//  display: flex;
-//  flex-direction: row;
-//  justify-content: start;
-//  padding: 0;
-//  margin: 0;
-//  left: 0;
-//  top: 60px;
-//  cursor: unset;
-//}
-//
-//.li{
-//  @include text(14px, $primaryFont, 900);
-//  display: block;
-//  width: 95px;
-//  color: rgba(38, 38, 38, 0.2);
-//  //text-transform: uppercase;
-//}
 

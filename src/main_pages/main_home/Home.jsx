@@ -54,6 +54,12 @@ export function Home() {
                     <div className={style.imgCont}>
                         <img src={wormImg} alt=""/>
                     </div>
+
+
+                    <div className={style.btnForSm}>
+                        <CourseButton/>
+                    </div>
+
                 </div>
             </section>
     )

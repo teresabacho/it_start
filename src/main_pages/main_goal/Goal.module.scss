@@ -7,7 +7,7 @@
   //min-height: 100vh;
   background-color: #fff;
   margin-top: -4px;
-  overflow: visible;
+  overflow: hidden;
 
   .mainBlockCont {
     width: $bigBlockForLW;
@@ -278,4 +278,131 @@
 
 
   }
+
+
+  @media screen and (max-width: $mW){
+
+    .mainBlockCont {
+      width: $bigBlockForMW;
+    }
+
+    .upperBoxLeft {
+      overflow: hidden;
+
+      .p1 {
+        width: 335px;
+        margin: 25px 0 0 0;
+        @include text(15px, $primaryFont, 400);
+
+        span {
+          @include text(15px, $primaryFont, 400, italic);
+        }
+      }
+
+      .p2 {
+        width: 435px;
+        margin: 25px 0 0 0;
+        @include text(14px, $primaryFont, 400);
+
+        span {
+          @include text(14px, $primaryFont, 400, italic);
+        }
+      }
+
+      ul {
+        margin: 15px 0 0 0;
+        list-style-type: '-  ';
+        padding-left: 15px;
+
+        li {
+          margin-top: 15px;
+          @include text(15px, $primaryFont, 600);
+        }
+      }
+    }
+
+    .downBox {
+      height: 338px;
+    }
+
+    .downBoxRight {
+
+      .p3 {
+        margin: 45px 0 0 0;
+        @include text(15px, $primaryFont, 400);
+
+        span {
+          @include text(15px, $primaryFont, 500, italic);
+        }
+      }
+
+      .p4 {
+        margin: 35px 0 0 0;
+        @include text(15px, $primaryFont, 400);
+
+        span {
+          @include text(15px, $primaryFont, 400, italic);
+        }
+      }
+
+      .p5 {
+        margin: 5px 0 0 0;
+        @include text(15px, $primaryFont, 400);
+
+        span {
+          @include text(15px, $primaryFont, 400, italic);
+        }
+      }
+
+    }
+
+    // images
+    .upperBoxRightImg {
+      //overflow: hidden;
+      top: -46px;
+      left: 110px;
+      width: 624px;
+      //width: 300px;
+      height: 300px;
+
+      img {
+        position: absolute;
+        overflow: hidden;
+      }
+
+      .person {
+        z-index: 0;
+        transform: scale(0.6);
+      }
+    }
+
+    .downBoxLeftImg {
+      position: absolute;
+      min-width: 100px;
+      min-height: 100px;
+      top: -126px;
+      left: -105px;
+
+      .personL {
+        position: absolute;
+        top: 50px;
+        left: 13px;
+        transform: scale(0.6);
+      }
+    }
+
+    .btn {
+      margin: 25px 156px 0 0;
+
+      button{
+        width: 200px;
+        height: 40px;
+        @include text(17px, $primaryFont, 600);
+      }
+    }
+  }
+
+
+
+
 }

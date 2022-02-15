@@ -82,4 +82,40 @@
 
   }
 
+  @media screen and (max-width: $mW){
+    height: 200px;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+
+    .dis{
+      display: none;
+    }
+
+    .footerCont{
+      width: $bigBlockForMW;
+
+      .logoFooter{
+        height: 80px;
+
+        img{
+          height: 100%;
+        }
+      }
+
+      div{
+        height: 100%;
+        //margin-right: 100px;
+        margin: 0;
+
+        a{
+          display: block;
+          @include text(24px, $primaryFont, 800);
+          color: $darkColor;
+        }
+      }
+    }
+
+  }
+
 }

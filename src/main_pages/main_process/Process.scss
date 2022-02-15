@@ -584,6 +584,75 @@
 
 
   }
+
+
+  @media screen and (max-width: $slW) {
+
+    .mainBlockCont {
+      width: $bigBlockForMW;
+    }
+
+    .controls {
+      .stepss {
+        height: 409px;
+      }
+
+      .steps {
+        min-width: 245px;
+        min-height: 100px;
+        //background-color: #e6d1ff;
+        position: absolute;
+        text-align: start;
+      }
+
+      p {
+        margin: 0;
+        padding: 0;
+        @include text(15px, $primaryFont, 400);
+      }
+
+      h4 {
+        margin: 0;
+        padding: 0;
+        @include text(18px, $primaryFont, 700);
+        top: 24px;
+      }
+
+      span {
+        width: 270px;
+        @include text(14px, $primaryFont, 400);
+        top: 60px;
+      }
+
+      .step1 {
+        width: 230px;
+        left: 2px;
+        top: -126px;
+      }
+
+      .step2 {
+        left: 234px;
+        top: -6px;
+      }
+
+      .step3 {
+        left: 103px;
+        top: 207px;
+      }
+
+      .step4 {
+        left: 281px;
+        top: 350px;
+      }
+    }
+
+    .sliders {
+      top: 514px;
+      left: 236px;
+    }
+  }
+
+
 }
 
 

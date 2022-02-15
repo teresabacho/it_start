@@ -119,7 +119,32 @@
       @include text(16px, $primaryFont, 600);
     }
   }
+}
 
+@media screen and (max-width: $mW){
 
+  .header{
+    height: 50px;
+  }
+
+  .headerCont {
+    width: $bigBlockForMW;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .navCont{
+    nav {
+      width: 350px;
+    }
+
+    a {
+      @include text(16px, $primaryFont, 600);
+    }
+  }
 }
 

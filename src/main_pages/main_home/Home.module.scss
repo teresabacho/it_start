@@ -53,6 +53,15 @@
     margin-top: 75px;
   }
 
+  .btnForSm{
+    display: none;
+    margin-top: -60px;
+    margin-bottom: 25px;
+
+    button{
+      width: 450px;
+    }
+  }
 
   .imgCont {
     width: 610px;
@@ -94,6 +103,51 @@
 
     .btn {
       margin-top: 55px;
+    }
+
+    .imgCont{
+      width: 375px;
+      height: 400px;
+
+      img{
+        transform: scale(1.2);
+      }
+    }
+
+  }
+
+  @media screen and (max-width: $mW){
+
+    .mainBlockCont{
+      width: $bigBlockForMW;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    .titleBox {
+      width: 450px;
+      height: 205px;
+    }
+
+    h1 {
+      @include text(24px, $primaryFont, 700);
+      color: $darkColor;
+      line-height: 1.3;
+    }
+
+    .btn {
+      display: none;
+    }
+
+    .btnForSm{
+      margin-top: -60px;
+      margin-bottom: 25px;
+
+      button{
+        width: 450px;
+      }
     }
 
     .imgCont{
