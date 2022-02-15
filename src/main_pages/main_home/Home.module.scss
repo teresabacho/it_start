@@ -3,14 +3,15 @@
 
 .mainBlock {
   width: 100%;
-  height: 90vh;
+  //height: 90vh;
 
   //background-color: #4dc2be;
+
   .mainBlockCont{
-    width: $lW;
-    height: 90vh;
+    width: $bigBlockForLW;
+    //height: 90vh;
     margin: 0 auto;
-    padding-top: 5vh;
+    padding-top: 70px;
 
     display: flex;
     flex-direction: row;
@@ -25,18 +26,23 @@
     height: 550px;
 
     //padding-left: 140px;
-
     //background-color: #9781d9;
+
+    img{
+      width: 100%;
+    }
   }
 
-  .title {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .start {
-    margin-left: 19px;
-  }
+  //.title {
+  //  display: flex;
+  //  flex-direction: row;
+  //  justify-content: space-between;
+  //  width: 100%;
+  //}
+  //
+  //.start {
+  //  margin-left: 19px;
+  //}
 
   h1 {
     @include text(36px, $primaryFont, 700);
@@ -58,32 +64,46 @@
     img {
       width: 100%;
       height: 100%;
-      margin-left: 50px;
+      //margin-left: 50px;
       overflow: hidden;
+      transform: scale(1.3);
     }
   }
 
 
-  @media screen and (max-width: 1000px){
+
+
+  @media screen and (max-width: $slW){
 
     .mainBlockCont{
-      width: $slW;
+      width: $bigBlockForsLW;
       margin: 0 auto;
-      background-color: #8f4242;
+      align-items: start;
     }
 
     .titleBox {
-      width: 400px;
-      height: 300px;
-
-      //padding-left: 140px;
-
-      //background-color: #9781d9;
+      width: 450px;
+      height: 320px;
     }
 
+    h1 {
+      @include text(28px, $primaryFont, 700);
+      color: $darkColor;
+      line-height: 1.3;
+    }
 
+    .btn {
+      margin-top: 55px;
+    }
 
+    .imgCont{
+      width: 375px;
+      height: 400px;
 
+      img{
+        transform: scale(1.2);
+      }
+    }
 
   }
 

@@ -8,7 +8,7 @@ export function Footer() {
         <footer className={style.footer}>
             <div className={style.footerWrapper}>
                 <div className={style.footerCont}>
-                    <a href="#">
+                    <a href="#" className={style.logoFooter}>
                         <img src={logo} alt="logo"/>
                     </a>
                     <div>

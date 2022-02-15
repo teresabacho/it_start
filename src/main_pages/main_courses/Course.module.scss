@@ -16,7 +16,7 @@
   }
 
   .mainBlockCont {
-    width: $lW;
+    width: $bigBlockForLW;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@
   a{
     border-radius: 255px 15px 225px 15px/15px 235px 5px 275px;
     display: block;
-    width: 1075px;
+    width: $smallBlockForLW;
     height: 170px;
     padding: 40px 45px;
     text-decoration: none;
@@ -82,8 +82,59 @@
       .time{
         margin-right: 70px;
       }
-
     }
   }
 
+
+  @media screen and (max-width: $slW){
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .titleWrapper{
+      margin-bottom: 15px;
+    }
+
+    .mainBlockCont {
+      width: $bigBlockForsLW;
+    }
+
+    a{
+      width: $smallBlockForsLW;
+      height: 130px;
+      padding: 40px 45px;
+      text-decoration: none;
+      margin: 25px auto;
+
+      .top{
+        .course{
+          @include text(18px, $primaryFont, 400);
+          color: $darkColor;
+        }
+
+        .method{
+          @include text(18px, $primaryFont, 500);
+          color: #717171;
+        }
+      }
+
+      .middle{
+        margin-top: 2px;
+
+        h4{
+          @include text(28px, $primaryFont, 800);
+        }
+      }
+
+      .bottom{
+        margin-top: 35px;
+        @include text(18px, $primaryFont, 600);
+        color: #717171;
+
+        .time{
+          margin-right: 70px;
+        }
+      }
+    }
+
+  }
 }

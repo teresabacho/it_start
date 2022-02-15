@@ -9,8 +9,6 @@
   background-color: transparent;
 
 
-
-
   .footerWrapper{
     width: 100%;
     height: 100%;
@@ -24,7 +22,7 @@
   }
 
   .footerCont{
-    width: $lW;
+    width: $bigBlockForLW;
     margin: 0 auto;
     //background-color: #ab4848;
     display: flex;
@@ -32,12 +30,17 @@
     justify-content: space-between;
     align-items: start;
 
+    .logoFooter{
+
+    }
+
     div{
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      margin-right: 500px;
+      margin-left: 40px;
+      margin-right: 460px;
 
       a{
         display: block;
@@ -50,6 +53,33 @@
       }
     }
   }
-  
+
+
+  @media screen and (max-width: $slW){
+
+    .footerCont{
+      width: $bigBlockForsLW;
+
+      .logoFooter{
+        height: 100px;
+
+        img{
+          height: 100%;
+        }
+      }
+
+      div{
+        height: 100%;
+        margin-right: 100px;
+
+        a{
+          display: block;
+          @include text(28px, $primaryFont, 800);
+          color: $darkColor;
+        }
+      }
+    }
+
+  }
 
 }

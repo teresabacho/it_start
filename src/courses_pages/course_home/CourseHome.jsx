@@ -2,7 +2,7 @@ import React, {useCallback, useState} from "react";
 import style from "./CourseHome.module.scss";
 import CourseButton from "../../components/course_button/CourseButton";
 
-import stepsImg from "../../assets/images/whiteSteps.svg";
+// import stepsImg from "../../assets/images/whiteSteps.svg";
 import personCourse from "../../assets/images/personCourse.svg";
 
 

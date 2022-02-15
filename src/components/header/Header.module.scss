@@ -1,84 +1,125 @@
 @import "/src/styles/variables";
 @import "/src/styles/mixins";
 
+
+
 .header {
   width: 100%;
-  height: 10vh;
-  //position: fixed;
-  position: absolute;
+  height: 70px;
+  position: fixed;
+  //position: absolute;
   z-index: 30;
 
 
-  .headerCont{
-    width: $lW;
-    height: 100%;
-    margin: 0 auto;
-    //background-color: #fc9e9e;
+  //box-shadow: 0px -10px 38px 11px rgba(38, 38, 38, 0.3);
+  //box-shadow: 0px 20px 15px -15px rgba(38, 38, 38, 0.3);
+}
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+.headerScrolled{
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0px -9px 30px rgba(38, 38, 38, 0.1);
+}
+
+.headerCont {
+  width: $bigBlockForLW;
+  height: 100%;
+  margin: 0 auto;
+  //background-color: #fc9e9e;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
-  .logo {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-  }
+.logo {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
 
+.navCont{
   nav {
-    width: 430px;
+    width: 400px;
+    //background-color: #fff;
   }
+
 
   ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    cursor: pointer;
   }
 
   li {
-    @include text(20px, $primaryFont, 700);
-    position: relative;
+    list-style-type: none;
   }
 
   a {
     text-decoration: none;
+    outline: none;
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    white-space: nowrap;
+    @include text(18px, $primaryFont, 600);
     color: $darkColor;
-    transition: color 0.3s;
   }
 
-  a:hover {
-    color: $sideColor;
-  }
 
-  a:after {
+  .linkSvgline a svg.linkSvgline {
     position: absolute;
-    content: "";
-    display: block;
-    bottom: 5px;
-    width: 0;
-    height: 2px;
-    z-index: 1;
-    background-color: $sideColor;
-    transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    opacity: 0;
-
+    top: 120%;
     left: 0;
-    right: 0;
-    margin: 0 auto;
-  }
-
-
-  a:hover:after {
+    overflow: hidden;
+    margin: 0;
     width: 100%;
-    opacity: 1;
-    //transform: scaleX(1);
-    transform-origin: center;
+    height: 20px;
+    transition: stroke-dashoffset 0.3s ease-in-out;
+    transform: translateY(-90%);
+    fill: none;
+    stroke: $darkColor;
+    //stroke: $sideColor;
+    stroke-width: 2;
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 200px;
+
   }
+
+  .linkSvgline a:hover svg.linkSvgline {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@media screen and (max-width: $slW){
+
+  .header{
+    height: 50px;
+  }
+
+  .headerCont {
+    width: $bigBlockForsLW;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .navCont{
+    nav {
+      width: 350px;
+    }
+
+    a {
+      @include text(16px, $primaryFont, 600);
+    }
+  }
+
+
 }
 

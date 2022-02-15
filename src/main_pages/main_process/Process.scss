@@ -5,13 +5,13 @@
 .mainBlockLearningProc {
   width: 100%;
   min-height: 20vh;
-  margin-top: -4px;
+  margin-top: -8px;
   background-color: #fff;
   overflow: visible;
 
 
   .mainBlockCont {
-    width: $lW;
+    width: $bigBlockForLW;
     margin: 0 auto;
     //background-color: #c792f3;
   }
@@ -92,12 +92,12 @@
     padding: 0 20px;
     text-align: center;
 
-    .stepss{
+    .stepss {
       position: relative;
       height: 200px;
     }
-    
-    .steps{
+
+    .steps {
       min-width: 245px;
       min-height: 100px;
       //background-color: #e6d1ff;
@@ -105,7 +105,7 @@
       text-align: start;
     }
 
-    p{
+    p {
       margin: 0;
       padding: 0;
       color: $darkColor;
@@ -115,7 +115,7 @@
       position: absolute;
     }
 
-    h4{
+    h4 {
       margin: 0;
       padding: 0;
       color: $darkColor;
@@ -126,7 +126,7 @@
       top: 24px;
     }
 
-    span{
+    span {
       margin: 0;
       padding: 0;
       display: inline-block;
@@ -141,26 +141,26 @@
     }
 
     // steps position
-    .step1{
+    .step1 {
       width: 280px;
       left: 0;
       top: -230px;
     }
 
-    .step2{
+    .step2 {
       width: 350px;
       height: 150px;
       left: 220px;
       top: -40px;
     }
 
-    .step3{
+    .step3 {
       width: 320px;
       left: 760px;
       top: 90px;
     }
 
-    .step4{
+    .step4 {
       right: 0;
       top: -100px;
       width: 285px;
@@ -168,28 +168,28 @@
 
 
     // buttons
-    .watchVideoBtn{
+    .watchVideoBtn {
       position: absolute;
       z-index: 1;
       top: 0;
       right: 0;
     }
 
-    .codeBtn{
+    .codeBtn {
       position: absolute;
       z-index: 1;
       top: -20px;
       right: 0;
     }
 
-    .changeBtn{
+    .changeBtn {
       position: absolute;
       z-index: 1;
       top: -86px;
       left: -73px;
     }
 
-    .checkBtn{
+    .checkBtn {
       position: absolute;
       top: -82px;
       left: -35px;
@@ -544,18 +544,47 @@
     }
   }
 
+
+  @media screen and (max-width: $slW) {
+
+    .mainBlockCont {
+      width: $bigBlockForsLW;
+    }
+
+    .controls {
+      .stepss {
+        height: 329px;
+      }
+
+      .step1 {
+        left: 2px;
+        top: -126px;
+      }
+
+      .step2 {
+        left: 430px;
+        top: -73px;
+      }
+
+      .step3 {
+        left: 97px;
+        top: 136px;
+      }
+
+      .step4 {
+        left: 476px;
+        top: 257px;
+      }
+    }
+
+    .sliders {
+      top: 456px;
+      left: 440px;
+    }
+
+
+  }
 }
 
-
-// Globals
-//body,
-//html {
-//  margin: 0;
-//  padding: 0;
-//  background: #EAF6FF;
-//  font-family: 'Mukta Malar', sans-serif;
-//  font-weight: 700;
-//  overflow: hidden;
-//}
 
 

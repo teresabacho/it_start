@@ -6,7 +6,7 @@
   overflow: hidden;
 
   h2 {
-    width: $lW;
+    width: $bigBlockForLW;
     display: block;
     margin: 0 auto;
     //padding: 0 0 0 130px;
@@ -38,6 +38,20 @@
     }
     100% {
       transform: translateX(-50%)
+    }
+  }
+
+  @media screen and (max-width: $slW){
+
+    h2{
+      width: $bigBlockForsLW;
+      @include text(50px, $primaryFont, 900);
+    }
+
+
+    .list{
+      top: 48px;
+      @include text(12px, $primaryFont, 900);
     }
   }
 }

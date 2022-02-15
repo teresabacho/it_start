@@ -12,6 +12,7 @@ export function Course() {
             </div>
 
             <div className={style.mainBlockCont}>
+
                 <a href="#">
                     <div className={style.flex}>
                         <div className={style.top}>

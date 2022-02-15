@@ -9,7 +9,7 @@
   //min-height: 100vh;
 
   .mainBlockCont {
-    width: $lW;
+    width: $bigBlockForLW;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -17,8 +17,8 @@
 
   .p {
     display: block;
-    width: 635px;
-    @include text(24px, $primaryFont, 400);
+    width: 535px;
+    @include text(19px, $primaryFont, 400);
     color: $darkColor;
     margin: 25px 0 0 110px;
   }
@@ -31,7 +31,8 @@
     justify-content: space-between;
 
     div {
-      width: 355px;
+      position: relative;
+      width: 255px;
       border-radius: 255px 15px 225px 15px/15px 235px 5px 275px;
       background: rgba(255, 255, 255, 0.5);
       -webkit-backdrop-filter: blur(10px);
@@ -43,18 +44,70 @@
 
       p{
         margin: 0;
-        @include text(18px, $primaryFont, 400);
+        @include text(16px, $primaryFont, 400);
       }
 
       span{
         display: block;
         margin-top: 5px;
-        @include text(18px, $primaryFont, 400);
+        @include text(16px, $primaryFont, 400);
         color: rgba(38, 38, 38, 0.7);
+      }
+
+      img{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: -11px;
+        right: -7px;
       }
     }
   }
 
 
+  @media screen and (max-width: $slW){
+
+    .mainBlockCont {
+      width: $bigBlockForsLW;
+    }
+
+    .p {
+      width: 435px;
+      @include text(17px, $primaryFont, 400);
+      margin: 25px 0 0 40px;
+    }
+
+    .blocksCont {
+      width: 100%;
+      margin-top: 35px;
+      display: flex;
+      flex-direction: column;
+      //justify-content: space-between;
+      //flex-wrap: wrap;
+
+      div {
+        width: $smallBlockForsLW - 40px;
+        padding: 20px;
+        margin: 10px auto;
+
+        p{
+          margin: 0;
+          @include text(16px, $primaryFont, 400);
+        }
+
+        span{
+          @include text(16px, $primaryFont, 400);
+        }
+
+        img{
+          width: 30px;
+          height: 30px;
+          top: -11px;
+          right: -7px;
+        }
+      }
+    }
+
+  }
 
 }
