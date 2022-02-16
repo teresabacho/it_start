@@ -23,7 +23,7 @@ export function Goal() {
                             справді <span>варте уваги</span>.</p>
 
                         <p className={style.p2}> Якщо ви стикаєтеся з <span>тими ж проблемами</span>, що і
-                            всі <br/> новачки:</p>
+                            всі новачки:</p>
 
                         <ul>
                             <li>З чого стартувати?</li>
@@ -36,35 +36,36 @@ export function Goal() {
 
                     <div className={style.upperBoxRightImg}>
                         <img src={personR} alt="Person right" className={style.person}/>
-                        {/*<img src={textR} alt="textOn" className={style.txt}/>*/}
                     </div>
                 </div>
 
                 <div className={style.downBox}>
                     <div className={style.downBoxRight}>
                         <p className={style.p3}>
-                            На <span>ITStart</span> вам допоможуть переконатися в тому, <br/> що незважаючи на всі
+                            На <span>ITStart</span> вам допоможуть переконатися в тому, що незважаючи на всі
                             страхи і
                             сумніви,
-                            <span> кожен <br/> здатний</span> реазуватися в IT.
+                            <span> кожен здатний</span> реазуватися в IT.
                         </p>
 
                         <p className={style.p4}>
-                            Головне - мати <span>інтерес до сфери</span> і чітке бачення, <br/> куди йти.
+                            Головне - мати <span>інтерес до сфери</span> і чітке бачення, куди йти.
                         </p>
 
                         <p className={style.p5}>
-                            Перше у вас вже є, а друге ви <span>отримаєте на <br/> курсах.</span>
+                            Перше у вас вже є, а друге ви <span>отримаєте на курсах.</span>
                         </p>
+                    </div>
+
+                    <div className={style.downBoxLeftImg}>
+                        <img src={personL} alt="Person right" className={style.personL}/>
                     </div>
 
                     <div className={style.btn}>
                         <CourseButton/>
                     </div>
 
-                    <div className={style.downBoxLeftImg}>
-                        <img src={personL} alt="Person right" className={style.personL}/>
-                    </div>
+
 
                 </div>
 

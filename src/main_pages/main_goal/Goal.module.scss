@@ -4,13 +4,12 @@
 
 .mainBlock {
   width: 100%;
-  //min-height: 100vh;
   background-color: #fff;
   margin-top: -4px;
   overflow: hidden;
 
   .mainBlockCont {
-    width: $bigBlockForLW;
+    width: $bigBlockForXLW;
     margin: 0 auto;
     //background-color: #b64d4d;
     overflow: visible;
@@ -82,6 +81,7 @@
   }
 
   .downBoxRight {
+    width: 635px;
 
     .p3 {
       margin: 140px 110px 0 0;
@@ -122,7 +122,10 @@
 
   // button
   .btn {
-    margin: 45px 237px 0 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 635px;
+    margin: 45px 0 0 0;
   }
 
 
@@ -163,27 +166,27 @@
   }
 
 
-
-  @media screen and (max-width: $slW){
+  // 1280 - 1000
+  @media screen and (max-width: $lW) {
     .mainBlockCont {
-      width: $bigBlockForsLW;
+      width: $bigBlockForLW;
     }
 
     .upperBoxLeft {
 
       .p1 {
         width: 435px;
-        margin: 25px 0 0 45px;
-        @include text(17px, $primaryFont, 400);
+        margin: 25px 0 0 50px;
+        @include text(16px, $primaryFont, 400);
 
         span {
-          @include text(17px, $primaryFont, 400, italic);
+          @include text(16px, $primaryFont, 400, italic);
         }
       }
 
       .p2 {
         width: 435px;
-        margin: 25px 0 0 45px;
+        margin: 25px 0 0 50px;
         @include text(16px, $primaryFont, 400);
 
         span {
@@ -192,8 +195,7 @@
       }
 
       ul {
-        margin: 15px 0 0 45px;
-        list-style-type: '-  ';
+        margin: 15px 0 0 50px;
         padding-left: 16px;
 
         li {
@@ -204,13 +206,15 @@
     }
 
     .downBox {
-      height: 390px;
+      height: 415px;
+      margin-top: 40px;
     }
 
     .downBoxRight {
+      width: 500px;
 
       .p3 {
-        margin: 45px 45px 0 0;
+        margin: 45px 50px 0 0;
         @include text(16px, $primaryFont, 400);
 
         span {
@@ -219,7 +223,7 @@
       }
 
       .p4 {
-        margin: 35px 45px 0 0;
+        margin: 35px 50px 0 0;
         @include text(16px, $primaryFont, 400);
 
         span {
@@ -228,20 +232,19 @@
       }
 
       .p5 {
-        margin: 5px 45px 0 0;
+        margin: 5px 50px 0 0;
         @include text(16px, $primaryFont, 400);
 
         span {
           @include text(16px, $primaryFont, 400, italic);
         }
       }
-
     }
 
     // images
     .upperBoxRightImg {
       top: 0;
-      right: 393px;
+      right: 400px;
 
       img {
         position: absolute;
@@ -250,7 +253,7 @@
       .person {
         z-index: 0;
         top: -95px;
-        left: 100px;
+        left: 0;
         transform: scale(0.7);
         overflow: hidden;
       }
@@ -266,32 +269,137 @@
       .personL {
         position: absolute;
         top: 50px;
-        left: 13px;
-        transform: scale(0.7);
+        left: 106px;
+        transform: scale(0.8);
       }
     }
 
     .btn {
-      margin: 40px 173px 0 0;
+      flex-direction: row;
+      justify-content: flex-start;
+      width: 500px;
+      margin: 45px 0 0 0;
     }
-
-
-
   }
 
 
-  @media screen and (max-width: $mW){
+  // 1000 - 768
+  @media screen and (max-width: $mW) {
 
     .mainBlockCont {
       width: $bigBlockForMW;
     }
 
     .upperBoxLeft {
+
+      .p1 {
+        width: 435px;
+        margin: 25px 0 0 40px;
+      }
+
+      .p2 {
+        width: 435px;
+        margin: 25px 0 0 40px;
+      }
+
+      ul {
+        margin: 15px 0 0 40px;
+        padding-left: 16px;
+      }
+    }
+
+    .downBox {
+      height: 410px;
+      margin-top: 25px;
+    }
+
+    .downBoxRight {
+      width: 430px;
+
+      .p3 {
+        margin: 45px 40px 0 0;
+      }
+
+      .p4 {
+        margin: 35px 40px 0 0;
+      }
+
+      .p5 {
+        margin: 5px 40px 0 0;
+      }
+
+    }
+
+    // images
+    .upperBoxRightImg {
+      top: 0;
+      right: 300px;
+
+      .person {
+        transform: scale(0.67);
+        overflow: hidden;
+      }
+    }
+
+    .downBoxLeftImg {
+
+      .personL {
+        top: 50px;
+        left: 10px;
+        transform: scale(0.8);
+      }
+    }
+
+
+    .btn {
+      flex-direction: row;
+      justify-content: flex-start;
+      width: 430px;
+      margin: 45px 0 0 0;
+
+      button {
+        width: 220px;
+        height: 50px;
+        @include text(18px, $primaryFont, 600);
+      }
+    }
+  }
+
+
+  // 767 - 320
+  @media screen and (max-width: $sW) {
+
+    .mainBlockCont {
+      width: 90%;
+    }
+
+    .upperBox {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    // img up
+    .upperBoxRightImg {
+      position: relative;
+      width: 320px;
+      height: 400px;
+      top: 0;
+      right: 0;
+
+      .person {
+        top: -119px;
+        left: -90px;
+        z-index: 0;
+        transform: scale(0.6);
+      }
+    }
+
+    .upperBoxLeft {
       overflow: hidden;
 
       .p1 {
-        width: 335px;
-        margin: 25px 0 0 0;
+        width: 90%;
+        margin: 15px 0 0 0;
         @include text(15px, $primaryFont, 400);
 
         span {
@@ -300,35 +408,37 @@
       }
 
       .p2 {
-        width: 435px;
-        margin: 25px 0 0 0;
-        @include text(14px, $primaryFont, 400);
+        width: 90%;
+        margin: 15px 0 0 0;
+        @include text(15px, $primaryFont, 400);
 
         span {
-          @include text(14px, $primaryFont, 400, italic);
+          @include text(15px, $primaryFont, 400, italic);
         }
       }
 
       ul {
         margin: 15px 0 0 0;
-        list-style-type: '-  ';
         padding-left: 15px;
 
         li {
-          margin-top: 15px;
+          margin-top: 10px;
           @include text(15px, $primaryFont, 600);
         }
       }
     }
 
     .downBox {
-      height: 338px;
+      flex-direction: column;
+      align-items: center;
+      height: 660px;
     }
 
     .downBoxRight {
+      width: 100%;
 
       .p3 {
-        margin: 45px 0 0 0;
+        margin: 15px 0 0 0;
         @include text(15px, $primaryFont, 400);
 
         span {
@@ -337,7 +447,7 @@
       }
 
       .p4 {
-        margin: 35px 0 0 0;
+        margin: 25px 0 0 0;
         @include text(15px, $primaryFont, 400);
 
         span {
@@ -357,52 +467,32 @@
     }
 
     // images
-    .upperBoxRightImg {
-      //overflow: hidden;
-      top: -46px;
-      left: 110px;
-      width: 624px;
-      //width: 300px;
-      height: 300px;
 
-      img {
-        position: absolute;
-        overflow: hidden;
-      }
-
-      .person {
-        z-index: 0;
-        transform: scale(0.6);
-      }
-    }
 
     .downBoxLeftImg {
-      position: absolute;
-      min-width: 100px;
-      min-height: 100px;
-      top: -126px;
-      left: -105px;
+      position: relative;
+      width: 320px;
+      height: 315px;
+      top: 0;
+      left: 0;
 
       .personL {
         position: absolute;
-        top: 50px;
-        left: 13px;
+        top: -95px;
+        left: -9px;
         transform: scale(0.6);
       }
     }
 
     .btn {
-      margin: 25px 156px 0 0;
+      width: 100%;
+      margin: 35px 0 0 0;
 
-      button{
-        width: 200px;
-        height: 40px;
-        @include text(17px, $primaryFont, 600);
+      button {
+        width: 100%;
       }
     }
   }
-
-
 
 
 }

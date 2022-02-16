@@ -10,7 +10,7 @@
 
 
   .mainBlockCont{
-    width: $bigBlockForLW;
+    width: $bigBlockForXLW;
     margin: 0 auto;
     //background-color: #fde5e5;
     //height: 300px;
@@ -134,10 +134,11 @@
   }
 
 
-  @media screen and (max-width: $slW){
+  @media screen and (max-width: $lW){
+    padding-bottom: 50px;
 
     .mainBlockCont{
-      width: $bigBlockForsLW;
+      width: $smallBlockForLW;
     }
 
     .mainBlockWrapper{
@@ -197,6 +198,7 @@
 
 
   @media screen and (max-width: $mW){
+    padding-bottom: 50px;
 
     .mainBlockCont{
       width: $bigBlockForMW;
@@ -204,12 +206,12 @@
 
     .mainBlockWrapper{
       padding: 25px 0;
-      flex-direction: column;
-      align-items: center;
+      //flex-direction: column;
+      //align-items: center;
     }
 
     .left{
-      width: 450px;
+      width: 350px;
       height: 360px;
 
       span{
@@ -228,16 +230,17 @@
         button{
           height: 50px;
           @include text(18px, $primaryFont, 700);
-          width: 450px;
+          width: 350px;
         }
       }
     }
 
     .right{
       //align-items: center;
-      align-items: start;
+      //align-items: start;
+      align-items: flex-end;
       margin-top: 50px;
-      height: 185px;
+      height: 225px;
       width: 450px;
 
       .top{
@@ -259,7 +262,75 @@
           @include text(20px, $primaryFont, 300);
         }
       }
-
     }
   }
+
+  @media screen and (max-width: $sW){
+    padding-bottom: 25px;
+
+    .mainBlockCont{
+      width: 90%;
+    }
+
+    .mainBlockWrapper{
+      padding: 25px 0;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .left{
+      width: 100%;
+      height: 360px;
+
+      span{
+        text-align: center;
+        @include text(22px, $primaryFont, 600);
+      }
+
+      form{
+        height: 300px;
+
+        input{
+          height: 50px;
+          @include text(16px, $primaryFont, 600);
+          padding-left: 15px;
+        }
+
+        button{
+          height: 50px;
+          @include text(18px, $primaryFont, 700);
+          width: 100%;
+        }
+      }
+    }
+
+    .right{
+      align-items: center;
+      margin-top: 50px;
+      height: 225px;
+      width: 100%;
+
+      .top{
+        @include text(20px, $primaryFont, 300);
+        h5{
+          @include text(22px, $primaryFont, 600);
+          line-height: 130%;
+        }
+      }
+
+      .bottom{
+        height: 105px;
+
+        a{
+          @include text(25px, $primaryFont, 700);
+          color: $darkColor;
+        }
+        p{
+          @include text(20px, $primaryFont, 300);
+        }
+      }
+    }
+  }
+
+
 }

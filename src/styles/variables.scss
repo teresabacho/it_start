@@ -12,27 +12,27 @@ $darkSideColor: #ea76f6;
 $darkColor: #262626;
 
 // width
-$bigBlockForLW: 1115px;
-$smallBlockForLW: 925px;
+$bigBlockForXLW: 1200px; // 1200+  // 1115
+$smallBlockForXLW: 1000px;
 
-$bigBlockForsLW: 775px;
-$smallBlockForsLW: 685px;
+$bigBlockForLW: 900px;   // 925   775
+$smallBlockForLW: 800px;
 
-$bigBlockForMW: 545px;
-$smallBlockForMW: 480px;
+$bigBlockForMW: 740px;  // 745   545
+$smallBlockForMW: 660px;
 
 
 
 
 // breakpoint
 
-$lW: 1400px;
+$xlW: 1400px;
 
-$slW: 1130px;
+$lW: 1280px;       // 1280 - 1000
 
-$mW: 890px;
+$mW: 1000px;        // 1000 - 768
 
-$sW: 580px;
+$sW: 767px;         // 767 - 320
 
 
 

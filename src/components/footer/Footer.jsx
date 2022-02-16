@@ -7,6 +7,7 @@ export function Footer() {
     return (
         <footer className={style.footer}>
             <div className={style.footerWrapper}>
+
                 <div className={style.footerCont}>
                     <a href="#" className={style.logoFooter}>
                         <img src={logo} alt="logo"/>
@@ -15,10 +16,11 @@ export function Footer() {
                         <a href="mailto:itstart@gmail.com">ITSTART@GMAIL.COM</a>
                         <a href="tel:+380972025850">+380 (97) 202-58-50</a>
                     </div>
-                    <a href="#" >
+                    <a href="#" className={style.up}>
                         <img src={up} alt="logo"/>
                     </a>
                 </div>
+
             </div>
         </footer>
     );

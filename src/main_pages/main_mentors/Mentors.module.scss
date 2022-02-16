@@ -6,10 +6,9 @@
   width: 100%;
   margin-top: 100px;
   margin-bottom: 100px;
-  //min-height: 100vh;
 
   .mainBlockCont {
-    width: $bigBlockForLW;
+    width: $bigBlockForXLW;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -24,15 +23,15 @@
   }
 
   .blocksCont {
-    width: 100%;
-    margin-top: 55px;
+    width: $bigBlockForXLW;
+    margin: 55px auto 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
     div {
       position: relative;
-      width: 255px;
+      width: 300px;
       border-radius: 255px 15px 225px 15px/15px 235px 5px 275px;
       background: rgba(255, 255, 255, 0.5);
       -webkit-backdrop-filter: blur(10px);
@@ -40,7 +39,6 @@
       padding: 29px;
 
       border: 2px solid white;
-      //border-image-source: linear-gradient(155.13deg, #FFFFFF -33.93%, rgba(255, 255, 255, 0.57) 47.29%, rgba(255, 255, 255, 0) 115.76%);
 
       p{
         margin: 0;
@@ -64,46 +62,37 @@
     }
   }
 
-
-  @media screen and (max-width: $slW){
+  // 1280 - 1000
+  @media screen and (max-width: $lW){
+    margin-top: 50px;
+    margin-bottom: 50px;
 
     .mainBlockCont {
-      width: $bigBlockForsLW;
+      width: $bigBlockForLW;
     }
 
     .p {
       width: 435px;
-      @include text(17px, $primaryFont, 400);
+      @include text(16px, $primaryFont, 400);
       margin: 25px 0 0 40px;
     }
 
     .blocksCont {
       width: 100%;
       margin-top: 35px;
-      display: flex;
-      flex-direction: column;
-      //justify-content: space-between;
-      //flex-wrap: wrap;
 
       div {
-        width: $smallBlockForsLW - 40px;
+        width: 225px;
         padding: 20px;
         margin: 10px auto;
 
         p{
           margin: 0;
-          @include text(16px, $primaryFont, 400);
+          @include text(15px, $primaryFont, 400);
         }
 
         span{
-          @include text(16px, $primaryFont, 400);
-        }
-
-        img{
-          width: 30px;
-          height: 30px;
-          top: -11px;
-          right: -7px;
+          @include text(15px, $primaryFont, 400);
         }
       }
     }
@@ -119,38 +108,61 @@
     }
 
     .p {
-      width: 435px;
-      @include text(17px, $primaryFont, 400);
-      margin: 25px auto 0;
+      width: 430px;
+      //@include text(16px, $primaryFont, 400);
+      margin: 25px 0 0 40px;
     }
 
     .blocksCont {
       width: 100%;
-      margin-top: 15px;
+      margin-top: 35px;
+      flex-direction: column;
 
       div {
         width: $smallBlockForMW - 40px;
         padding: 20px;
         margin: 10px auto;
+      }
+    }
+
+  }
+
+  @media screen and (max-width: $sW){
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    .mainBlockCont {
+      width: 90%;
+    }
+
+    .p {
+      width: 100%;
+      @include text(15px, $primaryFont, 400);
+      margin: 25px 0 0 0;
+    }
+
+    .blocksCont {
+      width: 100%;
+      margin-top: 25px;
+      flex-direction: column;
+
+      div {
+        width: 90%;
+        padding: 15px;
+        margin: 10px auto;
 
         p{
           margin: 0;
-          @include text(15px, $primaryFont, 400);
+          @include text(14px, $primaryFont, 400);
         }
 
         span{
-          @include text(15px, $primaryFont, 400);
-        }
-
-        img{
-          width: 30px;
-          height: 30px;
-          top: -11px;
-          right: -7px;
+          @include text(14px, $primaryFont, 400);
         }
       }
     }
 
   }
+
 
 }

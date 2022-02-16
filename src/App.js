@@ -26,7 +26,7 @@ import SideMenu from "./components/side_menu/SideMenu";
 function App() {
     return (
         <div className="App">
-            <Header/>
+            {/*<Header/>*/}
             <Background/>
 
             <main>

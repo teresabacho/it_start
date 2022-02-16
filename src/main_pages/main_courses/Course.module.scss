@@ -15,7 +15,7 @@
   }
 
   .mainBlockCont {
-    width: $bigBlockForLW;
+    width: $bigBlockForXLW;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -75,17 +75,16 @@
 
     .bottom{
       margin-top: 55px;
+      display: flex;
+      justify-content: space-between;
       @include text(22px, $primaryFont, 600);
       color: #717171;
 
-      .time{
-        margin-right: 70px;
-      }
     }
   }
 
 
-  @media screen and (max-width: $slW){
+  @media screen and (max-width: $lW){
     margin-top: 50px;
     margin-bottom: 50px;
 
@@ -94,11 +93,11 @@
     }
 
     .mainBlockCont {
-      width: $bigBlockForsLW;
+      width: $bigBlockForLW;
     }
 
     a{
-      width: $smallBlockForsLW;
+      width: $smallBlockForLW - 80px;
       height: 130px;
       padding: 40px 45px;
       text-decoration: none;
@@ -133,36 +132,30 @@
         }
       }
     }
-
   }
 
-
   @media screen and (max-width: $mW){
-    //margin-top: 50px;
-    //margin-bottom: 50px;
 
-    //.titleWrapper{
-    //  margin-bottom: 15px;
-    //}
+    .titleWrapper{
+      margin-bottom: 15px;
+    }
 
     .mainBlockCont {
       width: $bigBlockForMW;
     }
 
     a{
-      width: $smallBlockForMW;
-      height: 100px;
-      padding: 30px 35px;
-      text-decoration: none;
-      margin: 25px auto;
+      width: $smallBlockForMW - 80px;
 
       .top{
         .course{
-          @include text(15px, $primaryFont, 400);
+          @include text(18px, $primaryFont, 400);
+          color: $darkColor;
         }
 
         .method{
-          @include text(15px, $primaryFont, 500);
+          @include text(18px, $primaryFont, 500);
+          color: #717171;
         }
       }
 
@@ -170,19 +163,113 @@
         margin-top: 2px;
 
         h4{
-          @include text(22px, $primaryFont, 800);
+          @include text(28px, $primaryFont, 800);
         }
       }
 
       .bottom{
-        margin-top: 25px;
-        @include text(16px, $primaryFont, 600);
+        margin-top: 35px;
+        @include text(18px, $primaryFont, 600);
 
         .time{
           margin-right: 70px;
         }
       }
     }
-
   }
+
+  @media screen and (max-width: $sW){
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    .titleWrapper{
+      margin-bottom: 15px;
+    }
+
+    .mainBlockCont {
+      width: 90%;
+    }
+
+    a{
+      width: 90%;
+      padding: 10px 15px;
+
+      .top{
+        .course{
+          @include text(15px, $primaryFont, 400);
+          color: $darkColor;
+        }
+
+        .method{
+          @include text(15px, $primaryFont, 500);
+          color: #717171;
+        }
+      }
+
+      .middle{
+        margin-top: 2px;
+
+        h4{
+          @include text(20px, $primaryFont, 800);
+        }
+      }
+
+      .bottom{
+        justify-content: space-between;
+        margin-top: 35px;
+        @include text(14px, $primaryFont, 500);
+
+      }
+    }
+  }
+
+
+  //@media screen and (max-width: $mW){
+  //  //margin-top: 50px;
+  //  //margin-bottom: 50px;
+  //
+  //  //.titleWrapper{
+  //  //  margin-bottom: 15px;
+  //  //}
+  //
+  //  .mainBlockCont {
+  //    width: $bigBlockForMW;
+  //  }
+  //
+  //  a{
+  //    width: $smallBlockForMW;
+  //    height: 100px;
+  //    padding: 30px 35px;
+  //    text-decoration: none;
+  //    margin: 25px auto;
+  //
+  //    .top{
+  //      .course{
+  //        @include text(15px, $primaryFont, 400);
+  //      }
+  //
+  //      .method{
+  //        @include text(15px, $primaryFont, 500);
+  //      }
+  //    }
+  //
+  //    .middle{
+  //      margin-top: 2px;
+  //
+  //      h4{
+  //        @include text(22px, $primaryFont, 800);
+  //      }
+  //    }
+  //
+  //    .bottom{
+  //      margin-top: 25px;
+  //      @include text(16px, $primaryFont, 600);
+  //
+  //      .time{
+  //        margin-right: 70px;
+  //      }
+  //    }
+  //  }
+  //
+  //}
 }

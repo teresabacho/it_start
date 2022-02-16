@@ -37,23 +37,23 @@
   animation: gradient 5s infinite;
 }
 
-//@keyframes gradient {
-//  25%{
-//    transform: scale(1.2) translate(-100px);
-//  }
-//
-//  50%{
-//    transform: scale(1.6) translate(100px);
-//  }
-//
-//  75%{
-//    transform: scale(1.4) translate(100px);
-//  }
-//
-//  100%{
-//    transform: scale(1) translate(0px);
-//  }
-//}
+@keyframes gradient {
+  25%{
+    transform: scale(1.2) translate(-100px);
+  }
+
+  50%{
+    transform: scale(1.6) translate(100px);
+  }
+
+  75%{
+    transform: scale(1.4) translate(100px);
+  }
+
+  100%{
+    transform: scale(1) translate(0px);
+  }
+}
 
 .bgWrap div:nth-child(1){
   height: 90%;

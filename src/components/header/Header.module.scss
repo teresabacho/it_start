@@ -23,7 +23,7 @@
 }
 
 .headerCont {
-  width: $bigBlockForLW;
+  width: $bigBlockForXLW;
   height: 100%;
   margin: 0 auto;
   //background-color: #fc9e9e;
@@ -94,14 +94,14 @@
   }
 }
 
-@media screen and (max-width: $slW){
+@media screen and (max-width: $lW){
 
   .header{
     height: 50px;
   }
 
   .headerCont {
-    width: $bigBlockForsLW;
+    width: $bigBlockForLW;
   }
 
   .logo {

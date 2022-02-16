@@ -11,7 +11,7 @@
 
 
   .mainBlockCont {
-    width: $bigBlockForLW;
+    width: $bigBlockForXLW;
     margin: 0 auto;
     //background-color: #c792f3;
   }
@@ -69,6 +69,7 @@
     position: relative;
     height: 400px;
     width: 300px;
+    overflow: hidden;
   }
 
   // Controls wrapper
@@ -545,10 +546,10 @@
   }
 
 
-  @media screen and (max-width: $slW) {
+  @media screen and (max-width: $lW) {
 
     .mainBlockCont {
-      width: $bigBlockForsLW;
+      width: $bigBlockForLW;
     }
 
     .controls {
@@ -562,8 +563,8 @@
       }
 
       .step2 {
-        left: 430px;
-        top: -73px;
+        left: 546px;
+        top: -48px;
       }
 
       .step3 {
@@ -573,20 +574,18 @@
 
       .step4 {
         left: 476px;
-        top: 257px;
+        top: 273px;
       }
     }
 
     .sliders {
-      top: 456px;
-      left: 440px;
+      top: 477px;
+      left: 564px;
     }
-
-
   }
 
 
-  @media screen and (max-width: $slW) {
+  @media screen and (max-width: $mW) {
 
     .mainBlockCont {
       width: $bigBlockForMW;
@@ -594,7 +593,7 @@
 
     .controls {
       .stepss {
-        height: 409px;
+        height: 332px;
       }
 
       .steps {
@@ -626,30 +625,114 @@
 
       .step1 {
         width: 230px;
-        left: 2px;
-        top: -126px;
+        left: 42px;
+        top: -98px;
       }
 
       .step2 {
-        left: 234px;
-        top: -6px;
+        left: 331px;
+        top: 10px;
       }
 
       .step3 {
         left: 103px;
-        top: 207px;
+        top: 159px;
       }
 
       .step4 {
-        left: 281px;
-        top: 350px;
+        left: 398px;
+        top: 279px;
       }
     }
 
     .sliders {
-      top: 514px;
-      left: 236px;
+      top: 524px;
+      left: 337px;
     }
+  }
+
+  @media screen and (max-width: $sW) {
+
+    .mainBlockCont {
+      width: 90%;
+    }
+
+    .controls {
+      width: 300px;
+      margin: 0 auto;
+      padding: 0;
+      //padding: 0 10px;
+
+      .stepss {
+        height: 435px;
+      }
+
+      .steps {
+        min-width: 205px;
+        min-height: 100px;
+        //background-color: #e6d1ff;
+        position: absolute;
+        text-align: start;
+      }
+
+      span {
+        width: 207px;
+      }
+
+      .step1 {
+        width: 230px;
+        left: 45px;
+        top: -110px;
+      }
+
+      .step2 {
+        width: 267px;
+        left: 32px;
+        top: 21px;
+      }
+
+      .step3 {
+        width: 200px;
+        left: 68px;
+        top: 225px;
+      }
+
+      .step4 {
+        left: 21px;
+        top: 339px;
+        width: 225px;
+      }
+
+      .watchVideoBtn{
+        transform: scale(0.7);
+        top: -15px;
+      }
+
+      .codeBtn {
+        top: -46px;
+        left: -93px;
+        transform: scale(0.7);
+      }
+
+      .changeBtn{
+        top: -50px;
+        left: 99px;
+        transform: scale(0.7);
+      }
+
+      .checkBtn{
+        top: -3px;
+        left: 156px;
+        transform: scale(0.7);
+      }
+    }
+
+    .sliders {
+      top: 557px;
+      left: -9px;
+    }
+
+
   }
 
 

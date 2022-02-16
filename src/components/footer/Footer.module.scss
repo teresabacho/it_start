@@ -22,8 +22,9 @@
   }
 
   .footerCont{
-    width: $bigBlockForLW;
+    width: $bigBlockForXLW;
     margin: 0 auto;
+    height: 130px;
     //background-color: #ab4848;
     display: flex;
     flex-direction: row;
@@ -31,7 +32,9 @@
     align-items: start;
 
     .logoFooter{
-
+      img{
+        width: 130px;
+      }
     }
 
     div{
@@ -39,8 +42,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      margin-left: 40px;
-      margin-right: 460px;
+      padding-right: 350px;
 
       a{
         display: block;
@@ -55,22 +57,20 @@
   }
 
 
-  @media screen and (max-width: $slW){
+  @media screen and (max-width: $lW){
 
     .footerCont{
-      width: $bigBlockForsLW;
+      width: $bigBlockForLW;
+      height: 100px;
 
       .logoFooter{
-        height: 100px;
-
         img{
-          height: 100%;
+          width: 100px;
         }
       }
 
       div{
-        height: 100%;
-        margin-right: 100px;
+        padding-right: 250px;
 
         a{
           display: block;
@@ -84,38 +84,59 @@
 
   @media screen and (max-width: $mW){
     height: 200px;
-    justify-content: start;
-    align-items: center;
-    margin: 0;
-
-    .dis{
-      display: none;
-    }
 
     .footerCont{
       width: $bigBlockForMW;
+      height: 100px;
 
       .logoFooter{
-        height: 80px;
-
         img{
-          height: 100%;
+          width: 100px;
         }
       }
 
       div{
-        height: 100%;
-        //margin-right: 100px;
-        margin: 0;
+        padding-right: 150px;
 
         a{
           display: block;
-          @include text(24px, $primaryFont, 800);
+          @include text(28px, $primaryFont, 800);
           color: $darkColor;
         }
       }
     }
+  }
 
+  @media screen and (max-width: $sW){
+    height: 200px;
+
+    .footerCont{
+      width: 90%;
+      height: 50px;
+
+      .logoFooter{
+        img{
+          width: 50px;
+        }
+      }
+
+      div{
+        padding-right:15px;
+
+        a{
+          display: block;
+          @include text(18px, $primaryFont, 800);
+          color: $darkColor;
+          line-height: 1;
+        }
+      }
+
+      .up{
+        img{
+          transform: scale(0.8);
+        }
+      }
+    }
   }
 
 }

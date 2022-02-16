@@ -6,7 +6,7 @@
   overflow: hidden;
 
   h2 {
-    width: $bigBlockForLW;
+    width: $bigBlockForXLW;
     display: block;
     margin: 0 auto;
     //padding: 0 0 0 130px;
@@ -41,10 +41,11 @@
     }
   }
 
-  @media screen and (max-width: $slW){
+  // 1280 - 1000
+  @media screen and (max-width: $lW){
 
     h2{
-      width: $bigBlockForsLW;
+      width: $bigBlockForLW;
       @include text(50px, $primaryFont, 900);
     }
 
@@ -55,6 +56,7 @@
     }
   }
 
+  // 1000 - 768
   @media screen and (max-width: $mW){
 
     h2{
@@ -65,6 +67,21 @@
 
     .list{
       top: 36px;
+      @include text(10px, $primaryFont, 900);
+    }
+  }
+
+  // 768 - 320
+  @media screen and (max-width: $sW){
+
+    h2{
+      width: 90%;
+      @include text(32px, $primaryFont, 900);
+    }
+
+
+    .list{
+      top: 26px;
       @include text(10px, $primaryFont, 900);
     }
   }
