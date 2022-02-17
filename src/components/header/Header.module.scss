@@ -2,7 +2,6 @@
 @import "/src/styles/mixins";
 
 
-
 .header {
   width: 100%;
   height: 70px;
@@ -15,7 +14,7 @@
   //box-shadow: 0px 20px 15px -15px rgba(38, 38, 38, 0.3);
 }
 
-.headerScrolled{
+.headerScrolled {
   background: rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
@@ -26,7 +25,6 @@
   width: $bigBlockForXLW;
   height: 100%;
   margin: 0 auto;
-  //background-color: #fc9e9e;
 
   display: flex;
   flex-direction: row;
@@ -41,12 +39,52 @@
   cursor: pointer;
 }
 
-.navCont{
-  nav {
-    width: 400px;
-    //background-color: #fff;
-  }
 
+.a {
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  white-space: nowrap;
+  @include text(18px, $primaryFont, 600);
+  color: $darkColor;
+}
+
+
+.linkSvgline a svg.linkSvgline {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+  height: 20px;
+  transition: stroke-dashoffset 0.3s ease-in-out;
+  transform: translateY(-90%);
+  fill: none;
+  stroke: $darkColor;
+  stroke-width: 2;
+  stroke-dasharray: 200px;
+  stroke-dashoffset: 200px;
+}
+
+.linkSvgline a:hover svg.linkSvgline {
+  stroke-dashoffset: 0px;
+}
+
+.active {
+
+  a{
+    font-weight: 700 !important;
+  }
+}
+
+
+.navCont {
+  nav {
+    width: 500px;
+  }
 
   ul {
     display: flex;
@@ -57,46 +95,109 @@
   li {
     list-style-type: none;
   }
+}
 
-  a {
-    text-decoration: none;
-    outline: none;
-    position: relative;
-    display: inline-block;
-    vertical-align: bottom;
-    white-space: nowrap;
-    @include text(18px, $primaryFont, 600);
-    color: $darkColor;
-  }
+// Hamburger menu button
+.hamburgerBtn {
+  position: absolute;
+  z-index: 20;
+  top: 5px;
+  left: calc(-40px - 5%);
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  align-items: center;
+  justify-content: center;
+  border-radius: 255px 15px 225px 15px/15px 235px 5px 275px;
 
-
-  .linkSvgline a svg.linkSvgline {
-    position: absolute;
-    top: 120%;
-    left: 0;
-    overflow: hidden;
-    margin: 0;
-    width: 100%;
-    height: 20px;
-    transition: stroke-dashoffset 0.3s ease-in-out;
-    transform: translateY(-90%);
-    fill: none;
-    stroke: $darkColor;
-    //stroke: $sideColor;
-    stroke-width: 2;
-    stroke-dasharray: 200px;
-    stroke-dashoffset: 200px;
-
-  }
-
-  .linkSvgline a:hover svg.linkSvgline {
-    stroke-dashoffset: 0px;
+  img {
+    width: 24px;
+    height: 24px;
   }
 }
 
-@media screen and (max-width: $lW){
+// Hamburger menu container
+.hamburgerMenuCont {
+  z-index: 10;
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -300px;
 
-  .header{
+
+  .hamburgerMenuWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    //width: 300px;
+    //height: 100vh;
+    //position: fixed;
+    //top: 0;
+    //right: -300px;
+
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px -9px 30px rgba(38, 38, 38, 0.1);
+    //background-color: #9edbfd;
+
+    ul {
+      display: flex;
+      margin-top: 50px;
+      padding: 0 0 0 30px;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    li {
+      list-style-type: none;
+      margin-bottom: 15px;
+    }
+
+    .hamburgerMenuContBottom {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+
+      a {
+        text-decoration: none;
+        outline: none;
+        @include text(17px, $primaryFont, 700);
+        color: $darkColor;
+        margin-bottom: 15px;
+        padding-left: 30px;
+      }
+    }
+  }
+
+
+}
+
+// Black space
+
+.blackSpace {
+  display: none;
+  width: calc(100% - 300px);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(38, 38, 38, 0.55);
+}
+
+
+@media screen and (max-width: $lW) {
+
+  .header {
     height: 50px;
   }
 
@@ -110,7 +211,7 @@
     cursor: pointer;
   }
 
-  .navCont{
+  .navCont {
     nav {
       width: 350px;
     }
@@ -121,9 +222,9 @@
   }
 }
 
-@media screen and (max-width: $mW){
+@media screen and (max-width: $mW) {
 
-  .header{
+  .header {
     height: 50px;
   }
 
@@ -137,7 +238,7 @@
     cursor: pointer;
   }
 
-  .navCont{
+  .navCont {
     nav {
       width: 350px;
     }
@@ -146,5 +247,38 @@
       @include text(16px, $primaryFont, 600);
     }
   }
+}
+
+@media screen and (max-width: $sW) {
+
+  .displayNone {
+    display: none;
+  }
+
+  .headerCont {
+    width: 90%;
+  }
+
+  .logo {
+    width: 34px;
+    height: 34px;
+  }
+
+  .headerScrolled {
+    background: rgba(255, 255, 255, 0);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    box-shadow: none;
+  }
+
+  .hamburgerBtn {
+    display: block;
+  }
+
+  .hamburgerMenuCont {
+    right: -300px;
+  }
+
+
 }
 

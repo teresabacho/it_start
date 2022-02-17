@@ -1,6 +1,7 @@
 import React, {useCallback, useState} from "react";
 import style from "./Home.module.scss";
 import CourseButton from "../../components/course_button/CourseButton";
+import Fade from 'react-reveal/Fade';
 
 import wormImg from "../../assets/images/compleatedWorm.svg";
 import it from "../../assets/images/IT.svg";
@@ -19,18 +20,25 @@ export function Home() {
                 <div className={style.titleBox}>
                     {/*<img src={it} alt=""/>*/}
                     {/*<img src={start} className={style.start} alt=""/>*/}
-                    <img src={itStart} alt=""/>
-                    <h1>розпочни свою карєру в IT разом з нами</h1>
+                    <Fade top>
+                        <img src={itStart} alt=""/>
+                    </Fade>
+                    <Fade left>
+                        <div>
+                            <h1>розпочни свою карєру в IT разом з нами</h1>
 
-                    <div className={style.btn}>
-                        <CourseButton/>
+                            <div className={style.btn}>
+                                <CourseButton/>
+                            </div>
+                        </div>
+                    </Fade>
+                </div>
+
+                <Fade right>
+                    <div className={style.imgCont}>
+                        <img src={wormImg} alt=""/>
                     </div>
-                </div>
-
-
-                <div className={style.imgCont}>
-                    <img src={wormImg} alt=""/>
-                </div>
+                </Fade>
 
 
                 <div className={style.btnForSm}>

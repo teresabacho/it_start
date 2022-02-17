@@ -1,0 +1,25 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+
+.desktopRect{
+  display: flex;
+}
+
+.mobileRect{
+  display: none;
+}
+
+
+
+@media screen and (max-width: $sW){
+  .desktopRect{
+    display: none;
+  }
+
+  .mobileRect{
+    display: flex;
+  }
+
+}
+

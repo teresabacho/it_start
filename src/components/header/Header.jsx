@@ -2,6 +2,12 @@ import React from "react";
 import style from './Header.module.scss';
 import CourseButton from "../course_button/CourseButton";
 import Contacts from "../../main_pages/main_contacts/Contacts";
+import * as Scroll from 'react-scroll';
+import {Link, Element, Events, animateScroll as scroll, scrollSpy, scroller} from 'react-scroll';
+
+import hamburger from "../../assets/images/hamburger.svg";
+import closeHamburger from "../../assets/images/closeHamburger.svg";
+
 
 class Header extends React.Component {
     constructor(props) {
@@ -17,12 +23,12 @@ class Header extends React.Component {
         window.addEventListener('scroll', this.handleScroll)
     }
 
-    handleScroll = (props) =>{
+    handleScroll = (props) => {
         const scrollTop = window.pageYOffset;
 
-        if(scrollTop > 50){
+        if (scrollTop > 50) {
             this.setState({hasScrolled: true});
-        } else{
+        } else {
             this.setState({hasScrolled: false});
         }
     }
@@ -37,6 +43,12 @@ class Header extends React.Component {
 
                 <div className={style.headerCont}>
                     <div className={style.logo}>
+                        <Link activeClass={style.active}
+                              to="main_home"
+                              spy={true}
+                              smooth={true}
+                              offset={-60}
+                              duration={500}>
                         <a href="#">
                             <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 1H5.8V49H1V1Z" fill="#262626" stroke="#262626"/>
@@ -66,41 +78,133 @@ class Header extends React.Component {
                                     fill="white"/>
                             </svg>
                         </a>
+                        </Link>
                     </div>
 
 
-                    <div className={style.navCont}>
+                    <div className={style.navCont + " " + style.displayNone}>
                         <nav className={style.linkSvgline}>
                             <ul>
                                 <li>
-                                    <a href="#">Про нас
-                                        <svg className={style.linkSvgline}>
-                                            <path id="svg_line"
-                                                  d="m 1.986,8.91 c 55.429038,4.081 111.58111,5.822 167.11781,2.867 22.70911,-1.208 45.39828,-0.601 68.126,-0.778 28.38173,-0.223 56.76079,-1.024 85.13721,-1.33 24.17379,-0.261 48.42731,0.571 72.58115,0.571">
-                                            </path>
-                                        </svg>
-                                    </a>
+                                    <Link activeClass={style.active}
+                                          to="main_goal"
+                                          spy={true}
+                                          smooth={true}
+                                          offset={-50}
+                                          duration={500}>
+                                        <a href="#" className={style.a}>
+                                            Про нас
+                                            <svg className={style.linkSvgline}>
+                                                <path id="svg_line"
+                                                      d="m 1.986,8.91 c 55.429038,4.081 111.58111,5.822 167.11781,2.867 22.70911,-1.208 45.39828,-0.601 68.126,-0.778 28.38173,-0.223 56.76079,-1.024 85.13721,-1.33 24.17379,-0.261 48.42731,0.571 72.58115,0.571">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="#">Курси
-                                        <svg className={style.linkSvgline}>
-                                            <path id="svg_line"
-                                                  d="m 1.986,8.91 c 55.429038,4.081 111.58111,5.822 167.11781,2.867 22.70911,-1.208 45.39828,-0.601 68.126,-0.778 28.38173,-0.223 56.76079,-1.024 85.13721,-1.33 24.17379,-0.261 48.42731,0.571 72.58115,0.571">
-                                            </path>
-                                        </svg>
-                                    </a>
+                                    <Link activeClass={style.active}
+                                          to="main_mentors"
+                                          spy={true}
+                                          smooth={true}
+                                          offset={-50}
+                                          duration={500}>
+                                        <a href="#" className={style.a}>Ментори
+                                            <svg className={style.linkSvgline}>
+                                                <path id="svg_line"
+                                                      d="m 1.986,8.91 c 55.429038,4.081 111.58111,5.822 167.11781,2.867 22.70911,-1.208 45.39828,-0.601 68.126,-0.778 28.38173,-0.223 56.76079,-1.024 85.13721,-1.33 24.17379,-0.261 48.42731,0.571 72.58115,0.571">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="#">Контакти
-                                        <svg className={style.linkSvgline}>
-                                            <path id="svg_line"
-                                                  d="m 1.986,8.91 c 55.429038,4.081 111.58111,5.822 167.11781,2.867 22.70911,-1.208 45.39828,-0.601 68.126,-0.778 28.38173,-0.223 56.76079,-1.024 85.13721,-1.33 24.17379,-0.261 48.42731,0.571 72.58115,0.571">
-                                            </path>
-                                        </svg>
-                                    </a>
+                                    <Link activeClass={style.active}
+                                          to="main_courses"
+                                          spy={true}
+                                          smooth={true}
+                                          offset={-50}
+                                          duration={500}>
+                                        <a href="#" className={style.a}>Курси
+                                            <svg className={style.linkSvgline}>
+                                                <path id="svg_line"
+                                                      d="m 1.986,8.91 c 55.429038,4.081 111.58111,5.822 167.11781,2.867 22.70911,-1.208 45.39828,-0.601 68.126,-0.778 28.38173,-0.223 56.76079,-1.024 85.13721,-1.33 24.17379,-0.261 48.42731,0.571 72.58115,0.571">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link activeClass={style.active}
+                                          to="main_contacts"
+                                          spy={true}
+                                          smooth={true}
+                                          offset={-60}
+                                          duration={500}>
+                                        <a href="#" className={style.a}>Контакти
+                                            <svg className={style.linkSvgline}>
+                                                <path id="svg_line"
+                                                      d="m 1.986,8.91 c 55.429038,4.081 111.58111,5.822 167.11781,2.867 22.70911,-1.208 45.39828,-0.601 68.126,-0.778 28.38173,-0.223 56.76079,-1.024 85.13721,-1.33 24.17379,-0.261 48.42731,0.571 72.58115,0.571">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </nav>
+                    </div>
+
+                    <div className={style.blackSpace}>
+
+                    </div>
+
+
+                    <div className={style.hamburgerMenuCont}>
+
+                        <button type={"button"} className={style.hamburgerBtn}>
+                            <img src={hamburger} alt="hamburger menu"/>
+                            {/*<img src={closeHamburger} alt="hamburger menu"/>*/}
+                        </button>
+
+                        <div className={style.hamburgerMenuWrapper}>
+                            <div className={style.linkSvgline}>
+                                <ul>
+                                    <li>
+                                        <a href="#" className={style.a}>Про нас
+                                            <svg className={style.linkSvgline}>
+                                                <path id="svg_line"
+                                                      d="m 1.986,8.91 c 55.429038,4.081 111.58111,5.822 167.11781,2.867 22.70911,-1.208 45.39828,-0.601 68.126,-0.778 28.38173,-0.223 56.76079,-1.024 85.13721,-1.33 24.17379,-0.261 48.42731,0.571 72.58115,0.571">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" className={style.a}>Курси
+                                            <svg className={style.linkSvgline}>
+                                                <path id="svg_line"
+                                                      d="m 1.986,8.91 c 55.429038,4.081 111.58111,5.822 167.11781,2.867 22.70911,-1.208 45.39828,-0.601 68.126,-0.778 28.38173,-0.223 56.76079,-1.024 85.13721,-1.33 24.17379,-0.261 48.42731,0.571 72.58115,0.571">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" className={style.a}>Контакти
+                                            <svg className={style.linkSvgline}>
+                                                <path id="svg_line"
+                                                      d="m 1.986,8.91 c 55.429038,4.081 111.58111,5.822 167.11781,2.867 22.70911,-1.208 45.39828,-0.601 68.126,-0.778 28.38173,-0.223 56.76079,-1.024 85.13721,-1.33 24.17379,-0.261 48.42731,0.571 72.58115,0.571">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className={style.hamburgerMenuContBottom}>
+                                <a href="mailto:itstart@gmail.com">ITSTART@GMAIL.COM</a>
+                                <a href="tel:+380972025850">+380 (97) 202-58-50</a>
+                            </div>
+                        </div>
+
+
                     </div>
 
                 </div>

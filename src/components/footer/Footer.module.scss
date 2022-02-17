@@ -108,24 +108,25 @@
   }
 
   @media screen and (max-width: $sW){
-    height: 200px;
+    height: 160px;
 
     .footerCont{
       width: 90%;
-      height: 50px;
+      height: 45px;
 
       .logoFooter{
+        padding-right: 5px;
         img{
-          width: 50px;
+          width: 45px;
         }
       }
 
       div{
-        padding-right:15px;
+        padding-right: 10px;
 
         a{
           display: block;
-          @include text(18px, $primaryFont, 800);
+          @include text(16px, $primaryFont, 800);
           color: $darkColor;
           line-height: 1;
         }
@@ -133,7 +134,40 @@
 
       .up{
         img{
-          transform: scale(0.8);
+          transform: scale(0.7);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 360px){
+    height: 150px;
+
+    .footerCont{
+      width: 90%;
+      height: 35px;
+
+      .logoFooter{
+        padding-right: 5px;
+        img{
+          width: 35px;
+        }
+      }
+
+      div{
+        padding-right: 0;
+
+        a{
+          display: block;
+          @include text(16px, $primaryFont, 800);
+          color: $darkColor;
+          line-height: 1;
+        }
+      }
+
+      .up{
+        img{
+          transform: scale(0.67);
         }
       }
     }
